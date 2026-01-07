@@ -25,7 +25,10 @@
       font-family: "Space Grotesk", "Sora", sans-serif;
       background: var(--mist);
       color: var(--ink);
-      min-height: 100vh;
+    }
+
+    html::-webkit-scrollbar {
+      display: none;
     }
 
     html {
@@ -33,6 +36,7 @@
       scroll-snap-type: y mandatory;
       scroll-padding-top: clamp(2rem, 6vw, 4rem);
       scroll-behavior: smooth;
+      scrollbar-width: none;
     }
 
     .grain {
